@@ -19,13 +19,18 @@ function multiplication(a,b){
 
 function operate(operation, a,b){
     switch(operation){
-        case 'add':
+        case '+':
             return addition(a,b);
-        case 'subtract':
+        case '-':
             return subtraction(a,b)
-        case 'multiply':
+        case '*':
             return multiplication(a,b)
-        case 'divide':
+        case '/':
             return division(a,b)
-    }
+        }
 }
+
+let result = 0;
+let displayNumber = result == '' ? 0 : result;
+const display=document.getElementById('display');
+display.textContent=displayNumber;
