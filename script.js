@@ -86,3 +86,10 @@ equals.addEventListener('click', () => {
     console.log(displayNumber , firstNum, secondNum , operand , typeof operand);
 })
 
+const negative = document.querySelector('.negative');
+negative.addEventListener('click' , () => {
+    negNum = parseFloat(displayNumber);
+    negNum *= -1;
+    displayNumber = negNum.toString();
+    display.innerText=displayNumber;
+})
