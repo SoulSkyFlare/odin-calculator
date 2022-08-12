@@ -1,0 +1,26 @@
+#display {
+    display: block;
+    border: 2px solid black;
+    width: auto;
+    text-align: end;
+}
+.container{
+    display: grid;
+    gap: 3px;
+}
+.btns{
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.btn{
+    border: 1px solid black;
+    padding: 10px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
