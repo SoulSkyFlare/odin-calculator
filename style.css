@@ -8,10 +8,13 @@
     display: grid;
     gap: 3px;
 }
+.grid-col-span-2{
+    grid-column: span 2;
+}
 .btns{
     display: grid;
     gap: 3px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4 , 1fr);
 
 }
 

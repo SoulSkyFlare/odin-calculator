@@ -30,7 +30,20 @@ function operate(operation, a,b){
         }
 }
 
-let result = 0;
-let displayNumber = result == '' ? 0 : result;
+let displayNumber = 0;
 const display=document.getElementById('display');
 display.textContent=displayNumber;
+const nums=document.querySelectorAll('.num');
+nums.forEach(item => { 
+    item.addEventListener('click', e =>{
+        console.log(e.target.innerText)
+        displayNumber = displayNumber == 0 ? e.target.innerText.toString() : displayNumber+e.target.innerText.toString();
+        display.textContent=displayNumber;
+        console.log(displayNumber)
+    }
+    )})
+    const clear=document.querySelector('.clear');
+    clear.addEventListener('click', () =>{
+        displayNumber = 0;
+        display.textContent=displayNumber;
+    })
